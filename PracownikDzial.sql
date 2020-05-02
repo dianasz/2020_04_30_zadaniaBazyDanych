@@ -80,7 +80,7 @@ order by p.id_pracownik
 
 
 -- 4. Wyświetl imię, nazwisko i datę urodzenia najmłodszej kobiety
-select imie, nazwisko, data_urodzenia, datediff(current_date, data_urodzenia) as Najmlodszy from pracownik
+select imie, nazwisko, data_urodzenia from pracownik
 where plec='kobieta' 
 and datediff(current_date, data_urodzenia) = (select min(datediff(current_date, data_urodzenia)) from pracownik where plec='kobieta');
 
