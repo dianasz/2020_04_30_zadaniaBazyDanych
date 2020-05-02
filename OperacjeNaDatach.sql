@@ -35,6 +35,8 @@ select * from zakupy where datediff(current_date, data_zakupu)<=30 order by id;
 -- 5. Wyszukaj zakupy zrobione po godzinie 20:00
 select * from zakupy where hour(data_zakupu)>=20 order by id;
 
+-- 6. Wyświetl wszystkie zakupy posortowane w kolejności od zrobionych ostatnio do najstarszych
+select * from zakupy order by data_zakupu DESC;
 
 commit;
 

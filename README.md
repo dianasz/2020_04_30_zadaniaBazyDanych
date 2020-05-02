@@ -1,1 +1,0 @@
-# 2020_04_30_zadaniaBazyDanych
